@@ -29,7 +29,7 @@ document.getElementById("submit").onclick = function(){
         password += getCharacter[Random];
     }
 
-    document.getElementById("pass").textContent = password;
+    document.getElementById("pass").textContent = getCharacter ? length ? password : "Define Size" : "Select Character";
 
 
 }
