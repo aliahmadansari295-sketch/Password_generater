@@ -1,0 +1,88 @@
+/* पूरे पेज का लेआउट और डार्क बैकग्राउंड */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0b0f19;
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* बीच में दिखने वाला शानदार कार्ड */
+.card {
+    background: #1e293b;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid #334155;
+}
+
+/* हेडिंग्स और टेक्स्ट की स्टाइलिंग */
+h1 { font-size: 24px; color: #38bdf8; text-align: center; margin-bottom: 8px; }
+h2 { font-size: 15px; margin: 20px 0 10px; color: #94a3b8; }
+h3 { font-size: 15px; margin-bottom: 10px; color: #94a3b8; text-align: center; }
+.subtitle { font-size: 13px; color: #cbd5e1; text-align: center; margin-bottom: 25px; }
+
+/* चेकबॉक्स का डिज़ाइन */
+.checkbox-group { display: flex; flex-direction: column; gap: 12px; margin-bottom: 25px; }
+.checkbox-group label { display: flex; align-items: center; cursor: pointer; font-size: 15px; }
+.checkbox-group input { margin-right: 12px; width: 18px; height: 18px; accent-color: #38bdf8; cursor: pointer; }
+
+/* साइज़ इनपुट का डिज़ाइन */
+.input-group { display: flex; align-items: center; gap: 15px; margin-bottom: 30px; }
+#size { 
+    padding: 8px 12px; 
+    border-radius: 6px; 
+    background: #0f172a; 
+    border: 1px solid #475569; 
+    color: white; 
+    width: 80px; 
+    font-size: 16px; 
+    outline: none; 
+}
+#size:focus { border-color: #38bdf8; }
+
+/* सबमिट बटन (होवर इफ़ेक्ट के साथ) */
+#submit { 
+    width: 100%; 
+    padding: 14px; 
+    background: linear-gradient(135deg, #38bdf8, #2563eb); 
+    color: white; 
+    border: none; 
+    border-radius: 8px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: 0.3s ease; 
+    margin-bottom: 30px; 
+}
+#submit:hover { 
+    transform: translateY(-2px); 
+    box-shadow: 0 5px 15px rgba(56, 189, 248, 0.4); 
+}
+
+/* जहाँ पासवर्ड दिखेगा उस बॉक्स का डिज़ाइन */
+.result-box { 
+    background: #0f172a; 
+    padding: 15px; 
+    border-radius: 8px; 
+    border: 1px dashed #475569; 
+    text-align: center; 
+}
+.result-box label { font-size: 12px; color: #64748b; display: block; margin-bottom: 8px; }
+#pass { 
+    font-size: 22px; 
+    color: #4ade80; /* हैकर ग्रीन कलर */
+    font-family: monospace; 
+    word-break: break-all; 
+    min-height: 30px; 
+}
