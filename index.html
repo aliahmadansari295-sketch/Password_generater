@@ -3,23 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random_Password</title>
+    <title>Random Password Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Generate Any Random Password</h1><br><br>
-    <p1>Select What Character You Want In Your Password</p1><br><br>
-    <input type="checkbox" id="low">Lower Case Alphabate</input><br>
-    <input type="checkbox" id="up">Upper Case Alphabate</input><br>
-    <input type="checkbox" id="num">Number</input><br>
-    <input type="checkbox" id="spec">Special Character</input><br>
-    <h2>Enter How Many Character You Want In Your Password</h2><br>
-    <label>SIZE :</label>
-    <input type = "number" id = "size"><br><br>
-    <button id ="submit">SUBMIT</button>
-    <h3>Generated Password</h3><br><br>
-    <label>PASSWORD :</label>
-    <p2 id="pass"></p2>
-    <script src ="Random_Passwords.js"></script>
+    <div class="card">
+        <h1>Generate Random Password</h1>
+        <p class="subtitle">Select What Character You Want In Your Password</p>
+        
+        <div class="checkbox-group">
+            <label><input type="checkbox" id="low"> Lower Case Alphabet</label>
+            <label><input type="checkbox" id="up"> Upper Case Alphabet</label>
+            <label><input type="checkbox" id="num"> Number</label>
+            <label><input type="checkbox" id="spec"> Special Character</label>
+        </div>
+
+        <h2>Enter Password Length</h2>
+        <div class="input-group">
+            <label for="size">SIZE :</label>
+            <!-- मैंने डिफ़ॉल्ट वैल्यू 12 डाल दी है ताकि टूल खाली न दिखे -->
+            <input type="number" id="size" value="12" min="4" max="50">
+        </div>
+
+        <button id="submit">SUBMIT</button>
+
+        <h3>Generated Password</h3>
+        <div class="result-box">
+            <label>PASSWORD :</label>
+            <p id="pass"></p>
+        </div>
+    </div>
+    
+    <!-- तुम्हारी जावास्क्रिप्ट फाइल का नाम -->
+    <script src="Random_Passwords.js"></script>
 </body>
 </html>
